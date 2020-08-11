@@ -1,0 +1,1 @@
+console.log('yo from changed contentoooo.js');
