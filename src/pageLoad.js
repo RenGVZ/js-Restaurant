@@ -8,9 +8,9 @@ export const pageLoad = () => {
     const navUl = document.createElement('ul');
     navUl.classList.add('navUl');
     navUl.innerHTML = `
-      <li class='links'><i class="fas fa-code"></i></li>
-      <li class='links'><i class="fab fa-github"></i></li>
-      <li class='links'><i class="fab fa-linkedin"></i></li>
+      <li class='links'><a href="https://www.gavinrene.codes" target="_blank"><i class="fas fa-code"></i></a></li>
+      <li class='links'><a href="https://github.com/RenGVZ" target="_blank" <i class="fab fa-github"></i></a></li>
+      <li class='links'><a href="https://www.linkedin.com/in/gavin-garza/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
     `;
 
     navbar.appendChild(navUl)

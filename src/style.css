@@ -3,6 +3,16 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+a:link, a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  /* cursor: auto; */
+}
+
+a:link:active, a:visited:active {
+  color: white;
+}
+
 /* MAIN LAYOUT */
 /* Navbar */
 .navbar {
