@@ -1,3 +1,4 @@
+import { foodCatalog } from './foodCatalog'
 export const americanTab = () => {
   const box = document.getElementById('bxxx');
 
@@ -6,18 +7,18 @@ export const americanTab = () => {
   grid.innerHTML = `
     <div class='food-item'> 
       <div class='food-img' id='pancakes'></div>
-      <h2 class='food-name'>Pancakes</h2>
-      <p>An awesome description about this item</p>
+      <h2 class='food-name'>${foodCatalog[2][0]['name']}</h2>
+      <p>${foodCatalog[2][0]['description']}</p>
     </div>
     <div class='food-item'> 
       <div class='food-img' id='hamburger'></div>
-      <h2 class='food-name'>Hamburger</h2>
-      <p>An awesome description about this item</p>
+      <h2 class='food-name'>${foodCatalog[2][1]['name']}</h2>
+      <p>${foodCatalog[2][1]['description']}</p>
     </div>
     <div class='food-item'> 
       <div class='food-img' id='hotdog'></div>
-      <h2 class='food-name'>Hotdog</h2>
-      <p>An awesome description about this item</p>
+      <h2 class='food-name'>${foodCatalog[2][2]['name']}</h2>
+      <p>${foodCatalog[2][2]['description']}</p>
     </div>
   `
 

@@ -6,6 +6,7 @@ import { japaneseTab } from './japaneseTab';
 import { mexicanTab } from './mexicanTab';
 import { americanTab } from './americanTab';
 import { italianTab } from './italianTab';
+// import { foodCatalog } from './foodCatalog'
 
 // STEP 1
 pageLoad();
