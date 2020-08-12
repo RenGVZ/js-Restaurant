@@ -1,4 +1,10 @@
-import 'bootstrap';
-import './scss/app.scss';
+// import 'bootstrap';
+// import './scss/app.scss';
+import './style.css';
+import { pageLoad } from './pageLoad';
 
-console.log('yo from changed contentoooo.js');
+
+pageLoad();
+
+
+console.log('yo from contentoooo.js');
