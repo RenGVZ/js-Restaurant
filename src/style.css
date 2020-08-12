@@ -100,8 +100,8 @@ body {
 
 .image-thumb {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 #jp {
@@ -131,7 +131,7 @@ body {
 /* FOOD DISPLAY */
 
 .box-grid {
-  margin-top: 10%;
+  margin-top: 8%;
   display: flex;
   justify-content: center;
 }
@@ -167,6 +167,60 @@ body {
 
 #katsu {
   background: url('./img/katsucurry.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#tacos {
+  background: url('./img/tacos.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#nachos {
+  background: url('./img/nachos.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#tamales {
+  background: url('./img/tamales.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#pancakes {
+  background: url('./img/pancakes.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#hamburger {
+  background: url('./img/hamburger.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#hotdog {
+  background: url('./img/hotdog.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#pennepasta {
+  background: url('./img/pennepasta.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#fruttidimare {
+  background: url('./img/fruttidimare.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#margheritapizza {
+  background: url('./img/margheritapizza.jpg');
   background-position: center;
   background-size: cover;
 }

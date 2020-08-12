@@ -45,5 +45,6 @@ const displayTabContent = (tabId) => {
   (tabId === 'mexican') ? mexicanTab() :
   (tabId === 'american') ? americanTab() :
   (tabId === 'italian') ? italianTab() :
-  null;
+  null
+  tabSelect();
 }

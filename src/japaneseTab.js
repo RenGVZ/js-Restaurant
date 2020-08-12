@@ -22,5 +22,4 @@ export const japaneseTab = () => {
   `
 
   box.append(grid)
-  // grid.appendChild(foodItem1, foodItem2, foodItem3)
 }
