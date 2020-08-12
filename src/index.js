@@ -2,6 +2,10 @@ import './style.css';
 import { pageLoad } from './pageLoad';
 import { tabCreate } from './tabCreate'
 import { homeTab } from './homeTab';
+import { japaneseTab } from './japaneseTab';
+import { mexicanTab } from './mexicanTab';
+import { americanTab } from './americanTab';
+import { italianTab } from './italianTab';
 
 // STEP 1
 pageLoad();
@@ -30,11 +34,16 @@ const clearFields = () => {
   const h1 = document.querySelector('.header');
   const para = document.querySelector('.para');
   const ul = document.querySelector('.countries-ul');
-  h1.innerText = '';
-  para.innerText = '';
-  ul.innerHTML = '';
+  h1.remove();
+  para.remove();
+  ul.remove();
 }
 
 const displayTabContent = (tabId) => {
-  // (tab.id === 'japanese') ? 
+  (tabId === 'home') ? homeTab() : 
+  (tabId === 'japanese') ?  japaneseTab() :
+  (tabId === 'mexican') ? mexicanTab() :
+  (tabId === 'american') ? americanTab() :
+  (tabId === 'italian') ? italianTab() :
+  null;
 }

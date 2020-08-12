@@ -81,6 +81,7 @@ body {
 .tabs:hover {
   background-color: rgba(152, 152, 152, 0.755);
   color: white;
+  cursor: pointer;
 }
 
 /* HOME TAB */
@@ -123,6 +124,49 @@ body {
 
 #it {
   background: url('./img/italy.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+/* FOOD DISPLAY */
+
+.box-grid {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.food-item {
+  background-color: #D99B2A;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+}
+
+.food-img {
+  width: 200px;
+  height: 200px;
+}
+
+.food-name {
+  color: white;
+  font-size: larger;
+}
+
+#sushi {
+  background: url('./img/sushi.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#takoyaki {
+  background: url('./img/takoyaki.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#katsu {
+  background: url('./img/katsucurry.jpg');
   background-position: center;
   background-size: cover;
 }

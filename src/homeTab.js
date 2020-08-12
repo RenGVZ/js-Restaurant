@@ -8,7 +8,7 @@ export const homeTab = () => {
 
   const para = document.createElement('p');
   para.classList.add('para');
-  para.innerText = 'Choose from any of these world-class menus from around the world'
+  para.innerText = 'Choose from any one of these world-class menus'
   
   const images = document.createElement('ul');
   images.classList.add('countries-ul');
