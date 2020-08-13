@@ -23,9 +23,9 @@ const tabSelect = () => {
   tabs.forEach(tab => {
     tab.addEventListener('click', (e) => {
       clearFields();
-      let tabId = e.target.id;
+      let tabId = e.target;
       displayTabContent(tabId);
-      // clearFields();
+      changeActive(tabId)
     })
   })
 }
@@ -34,19 +34,24 @@ tabSelect();
 
 const clearFields = () => {
   const div = document.getElementById('bxxx')
-  const h1 = document.querySelector('.header')
-  const para = document.querySelector('.para');
-  const ul = document.querySelector('.countries-ul');
   div.innerHTML = ''
-//   ul.innerHTML = '';
 }
 
 const displayTabContent = (tabId) => {
   // clearFields();
-  (tabId === 'home') ? homeTab() :
-  (tabId === 'japanese') ?  japaneseTab() :
-  (tabId === 'mexican') ? mexicanTab() :
-  (tabId === 'american') ? americanTab() :
-  (tabId === 'italian') ? italianTab() :
-  console.log('djbekd');
+  (tabId.id === 'home') ? homeTab() :
+  (tabId.id === 'japanese') ?  japaneseTab() :
+  (tabId.id === 'mexican') ? mexicanTab() :
+  (tabId.id === 'american') ? americanTab() :
+  (tabId.id === 'italian') ? italianTab() :
+  null;
+  removeActive(tabId)
 };
+
+const changeActive = (target) => {
+  target.classList.toggle('active');
+}
+
+const removeActive = (target) => {
+  target.classList.remove('active')
+}
