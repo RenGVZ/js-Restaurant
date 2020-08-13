@@ -3,8 +3,9 @@ export const homeTab = () => {
   const box = document.getElementById('bxxx');
 
   const homeHeader = document.createElement('h1');
+  const text = document.createTextNode('IMMERSE YOURSELF IN CULINARY EXPERIENCES FROM AROUND THE WORLD');
   homeHeader.classList.add('header');
-  homeHeader.textContent = 'IMMERSE YOURSELF IN CULINARY EXPERIENCES FROM AROUND THE WORLD';
+  homeHeader.appendChild(text);
 
   const para = document.createElement('p');
   para.classList.add('para');
@@ -28,5 +29,4 @@ export const homeTab = () => {
   `
   
   box.append(homeHeader, para, images);
-
 }

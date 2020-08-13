@@ -1,7 +1,7 @@
 // STEP 2
 export const tabCreate = () => {
   const box = document.getElementById('bxxx');
-  
+  const landing = document.querySelector('.landing');
   const tabNav = document.createElement('ul');
   tabNav.classList.add('tab-nav');
   tabNav.innerHTML = `
@@ -12,5 +12,5 @@ export const tabCreate = () => {
     <li class='tabs' id='italian'>Italian</li>
   `
 
-  box.appendChild(tabNav);
+  landing.insertBefore(tabNav, box);
 }

@@ -49,6 +49,7 @@ a:link:active, a:visited:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .box {
@@ -77,6 +78,7 @@ a:link:active, a:visited:active {
   background-color: #f1a927db;
   margin: 0;
   height: 8%;
+  width: 67.2%;
 }
 
 .tabs {
@@ -149,7 +151,7 @@ a:link:active, a:visited:active {
   background-color: #D99B2A;
   padding: 2px;
   width: 200px;
-  height: 320px;
+  height: 350px;
   margin: 10px;
 }
 

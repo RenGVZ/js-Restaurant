@@ -23,5 +23,5 @@ export const japaneseTab = () => {
     </div>
   `
 
-  box.append(grid)
+  box.append(grid)  
 }

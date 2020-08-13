@@ -22,9 +22,10 @@ const tabSelect = () => {
   const tabs = document.querySelectorAll('.tabs');
   tabs.forEach(tab => {
     tab.addEventListener('click', (e) => {
-      let tabId = e.target.id;
       clearFields();
+      let tabId = e.target.id;
       displayTabContent(tabId);
+      // clearFields();
     })
   })
 }
@@ -32,20 +33,20 @@ const tabSelect = () => {
 tabSelect();
 
 const clearFields = () => {
-  const h1 = document.querySelector('.header');
+  const div = document.getElementById('bxxx')
+  const h1 = document.querySelector('.header')
   const para = document.querySelector('.para');
   const ul = document.querySelector('.countries-ul');
-  h1.remove();
-  para.remove();
-  ul.remove();
+  div.innerHTML = ''
+//   ul.innerHTML = '';
 }
 
 const displayTabContent = (tabId) => {
-  (tabId === 'home') ? homeTab() : 
+  // clearFields();
+  (tabId === 'home') ? homeTab() :
   (tabId === 'japanese') ?  japaneseTab() :
   (tabId === 'mexican') ? mexicanTab() :
   (tabId === 'american') ? americanTab() :
   (tabId === 'italian') ? italianTab() :
-  null
-  tabSelect();
-}
+  console.log('djbekd');
+};
